@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma3">
+    <Package name="NSA_PrivateBox">
+        <Container name="NSA_PrivateBox">
+            <Key ID="STR_NSA_pb_boxContainer">
+                <English>Crate contents:</English>
+                <Russian>Содержимое ящика:</Russian>
+            </Key>
+			<Key ID="STR_NSA_pb_noAccess">
+                <English>You have no access.</English>
+                <Russian>У вас нет доступа.</Russian>
+            </Key>
+			<Key ID="STR_NSA_pb_boxOwner">
+                <English>Crate owner:</English>
+                <Russian>Ящик принадлежит:</Russian>
+            </Key>
+        </Container>
+    </Package>
+</Project>

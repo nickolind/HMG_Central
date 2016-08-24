@@ -32,5 +32,13 @@ class CfgFunctions
 			file = "HMG_Central\pzn_amphibia";
 			class pzn_amphibia_main {};
 		};
+		class NSA_PrivateBox 
+		{
+			file = "HMG_Central\NSA_PrivateBox";
+			class pb_client {};
+			class pb_server {};
+			class pb_showBoxContents_HintC {};
+			class pb_showBoxContents_ACE {};
+		};
 	};
 };

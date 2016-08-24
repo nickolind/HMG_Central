@@ -56,8 +56,6 @@ s7_keyHandler = { // Speed increase by Blender
     _s7_keyPressed = _this select 1;
     _vcl = vehicle player;
     if (_vcl == player) exitWith {};
-    // if( ([_vcl] call NSA_pa_fnc_isAmphibia) && isEngineOn _vcl && (surfaceIsWater (getpos _vcl)) && (((getPosASL _vcl) select 2) < 0.5) ) then {
-    // if( ([_vcl] call NSA_pa_fnc_isAmphibia) && isEngineOn _vcl && (surfaceIsWater (getpos _vcl)) && (!(isTouchingGround _vcl) || (((getPosASL _vcl) select 2) < 0.5)) ) then {
     if( 
 		([_vcl] call NSA_pa_fnc_isAmphibia) 
 		&& 
