@@ -25,6 +25,7 @@ class CfgFunctions
 				preInit = 1;
 			};
 			class Main {};	
+			class confirmActDialog {};	
 		};
 		
 		class pzn_amphibia 
@@ -40,5 +41,23 @@ class CfgFunctions
 			class pb_showBoxContents_HintC {};
 			class pb_showBoxContents_ACE {};
 		};
+		class hmg_hardfreeze 
+		{
+			file = "HMG_Central\hmg_hardfreeze";
+			class hardfreeze {};
+			class hardfreeze_admin {};
+			class hardfreeze_local {};
+		};
 	};
 };
+
+// class Params
+// {
+	// class HMG_hardfreeze_modeParam
+	// {
+		// title = "Режим хардфриза"; 															// Param name visible in the list
+		// values[] = 	{	0,			1, 			2 			}; 								// 60, 100, 130, max (160)
+		// texts[] = 	{	"Выкл.", 	"Авто",		"Ручной"	}; 								// Description of each selectable item
+		// default = 1; 																		// Default value; must be listed in 'values' array, otherwise 0 is used
+	// };
+// };
