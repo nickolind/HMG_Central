@@ -10,7 +10,7 @@ if (isServer) then {
 	if (HMG_Hardfreeze_ON > 0) then {
 		{
 			_x enableSimulationGlobal false;
-		} forEach (playableUnits + vehicles);
+		} forEach playableUnits;
 	};
 	
 	"HMG_Hardfreeze_ON" addPublicVariableEventHandler {
@@ -65,10 +65,6 @@ if (isServer) then {
 					if ( ((diag_fps > nsa_fpsThreshold) && (diag_fpsMin > nsa_fpsThreshold)) || (HMG_Hardfreeze_ON != 1) ) exitWith {true}; 
 					sleep 1; 
 				};
-				
-				{
-					_x enableSimulationGlobal true;
-				} forEach vehicles;
 			
 				// Разморозка КО
 				while {( (count (_hf_groupLeaders select 0)) + (count (_hf_groupLeaders select 1)) + (count (_hf_groupLeaders select 2)) + (count (_hf_groupLeaders select 3)) ) > 0 } do {
@@ -113,7 +109,7 @@ if (isServer) then {
 					if (isPlayer _x) then {
 						[[0],"HMG_Central_fnc_hardfreeze_local", _x] call BIS_fnc_MP;
 					};
-				} forEach (playableUnits + vehicles);
+				} forEach playableUnits;
 			};
 		};
 	};
