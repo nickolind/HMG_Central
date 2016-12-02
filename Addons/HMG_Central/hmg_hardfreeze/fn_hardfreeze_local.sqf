@@ -20,4 +20,23 @@ switch (_this select 0) do {
 		};
 	};
 	
+	// DEBUG //--------------------------------------------------------------------------------------------------------------------------------//
+	case 9: {
+		if (alive player) then {
+			["<t color='#00FF00' size = '.9'>Хардфриз отключен</t><br/><t color='#FFFFFF' size = '.45'>by_admin</t>", 0,0.2,5,0.7,0,781] spawn bis_fnc_dynamictext; 
+		};
+	};
+	case 8: {
+		if (alive player) then {
+			["<t color='#00FF00' size = '.9'>Хардфриз отключен</t><br/><t color='#FFFFFF' size = '.45'>auto_KO</t>", 0,0.2,5,0.7,0,781] spawn bis_fnc_dynamictext;  
+		};
+	};
+	case 7: {
+		if (alive player) then {
+			["<t color='#00FF00' size = '.9'>Хардфриз отключен</t><br/><t color='#FFFFFF' size = '.45'>auto_all</t>", 0,0.2,5,0.7,0,781] spawn bis_fnc_dynamictext;  
+		};
+	};
+	// DEBUG //--------------------------------------------------------------------------------------------------------------------------------//
+
+	
 };

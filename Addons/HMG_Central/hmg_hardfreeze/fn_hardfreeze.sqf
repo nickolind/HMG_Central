@@ -20,7 +20,8 @@ if (isServer) then {
 				{
 					_x enableSimulationGlobal true;
 					if (isPlayer _x) then {
-						[[0],"HMG_Central_fnc_hardfreeze_local", _x] call BIS_fnc_MP;
+						// [[0],"HMG_Central_fnc_hardfreeze_local", _x] call BIS_fnc_MP;
+						[[9],"HMG_Central_fnc_hardfreeze_local", _x] call BIS_fnc_MP; // DEBUG
 					};
 				} forEach (playableUnits + vehicles);
 			};
@@ -81,7 +82,8 @@ if (isServer) then {
 							(_x select 0) enableSimulationGlobal true;
 							
 							if (isPlayer (_x select 0)) then {
-								[[0],"HMG_Central_fnc_hardfreeze_local", (_x select 0)] call BIS_fnc_MP;
+								// [[0],"HMG_Central_fnc_hardfreeze_local", (_x select 0)] call BIS_fnc_MP;
+								[[8],"HMG_Central_fnc_hardfreeze_local", _x] call BIS_fnc_MP; // DEBUG
 							};
 							
 							_x deleteAt 0;
@@ -107,7 +109,8 @@ if (isServer) then {
 				{
 					_x enableSimulationGlobal true;
 					if (isPlayer _x) then {
-						[[0],"HMG_Central_fnc_hardfreeze_local", _x] call BIS_fnc_MP;
+						// [[0],"HMG_Central_fnc_hardfreeze_local", _x] call BIS_fnc_MP;
+						[[7],"HMG_Central_fnc_hardfreeze_local", _x] call BIS_fnc_MP; // DEBUG
 					};
 				} forEach playableUnits;
 			};
