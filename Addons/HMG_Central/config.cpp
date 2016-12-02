@@ -7,9 +7,9 @@ class CfgPatches
 		requiredVersion = 1.5;
 		requiredAddons[] = {};
 		author = "Nickorr";
-        version = 0.1.0;
-        versionStr = "0.1.0";
-        versionAr[] = {0,1,0};
+        version = 0.1.1;
+        versionStr = "0.1.1";
+        versionAr[] = {0,1,1};
 	};
 };
 
@@ -27,12 +27,7 @@ class CfgFunctions
 			class Main {};	
 			class confirmActDialog {};	
 		};
-		
-		class pzn_amphibia 
-		{
-			file = "HMG_Central\pzn_amphibia";
-			class pzn_amphibia_main {};
-		};
+
 		class NSA_PrivateBox 
 		{
 			file = "HMG_Central\NSA_PrivateBox";
