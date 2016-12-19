@@ -81,7 +81,7 @@ if (isServer) then {
 						
 							if ( (isPlayer (_x select 0)) && !(simulationEnabled (_x select 0)) ) then {
 								// [[0],"HMG_Central_fnc_hardfreeze_local", (_x select 0)] call BIS_fnc_MP;
-								[[8],"HMG_Central_fnc_hardfreeze_local", _x] call BIS_fnc_MP; // DEBUG
+								[[8],"HMG_Central_fnc_hardfreeze_local", (_x select 0)] call BIS_fnc_MP; // DEBUG
 							};
 							(_x select 0) enableSimulationGlobal true;
 							
